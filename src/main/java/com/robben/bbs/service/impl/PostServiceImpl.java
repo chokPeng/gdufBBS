@@ -1,0 +1,1 @@
+package com.robben.bbs.service.impl;import com.robben.bbs.service.PostService;import org.springframework.stereotype.Service;@Servicepublic class PostServiceImpl implements PostService {}

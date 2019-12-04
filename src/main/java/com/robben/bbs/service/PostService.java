@@ -1,0 +1,1 @@
+package com.robben.bbs.service;public interface PostService {}

@@ -1,0 +1,35 @@
+server:
+  port: 8090
+#  servlet:
+#    session:
+#      cookie:
+#        name: hello
+#      timeout: 1m:
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/gdufBBS
+    hikari:
+      pool-name: gdufBBS
+      username: root
+      password: 123456
+      auto-commit: true
+      maximum-pool-size: 10
+      minimum-idle: 4
+    redis:
+      lettuce:
+        pool:
+          max-active: 8
+          max-wait: 1000
+      host: localhost
+      port: 6379
+  session:
+    store-type: redis
+    timeout: 500
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  #mybatis对应的实体类
+  type-aliases-package: com.robben.bbs.pojo.*
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

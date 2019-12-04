@@ -1,0 +1,1 @@
+package com.robben.bbs.mapper;import org.apache.ibatis.annotations.Mapper;import org.springframework.stereotype.Repository;@Repositorypublic interface PostMapper {}
