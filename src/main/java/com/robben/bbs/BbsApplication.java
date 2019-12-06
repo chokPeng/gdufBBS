@@ -9,6 +9,7 @@ import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.context.SecurityContextPersistenceFilter;
 import org.springframework.session.SessionRepository;
 import org.springframework.session.data.redis.config.annotation.web.http.EnableRedisHttpSession;
@@ -22,8 +23,6 @@ import java.util.logging.Logger;
 public class BbsApplication {
    //SecurityContextPersistenceFilter
     public static void main(String[] args) {
-        //SessionRepository
-       // JsonDeserializer<UsernamePasswordAuthenticationToken>
 
         SpringApplication.run(BbsApplication.class, args);
     }
