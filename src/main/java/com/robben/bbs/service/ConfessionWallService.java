@@ -1,0 +1,1 @@
+package com.robben.bbs.service;import com.robben.bbs.pojo.ConfessionWall;import java.util.List;public interface ConfessionWallService {    List getConfessionWall();    Boolean postConfessionWall(ConfessionWall confessionWall);}

@@ -5,6 +5,7 @@ server:
 #      cookie:
 #        name: hello
 #      timeout: 1m:
+
 spring:
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
@@ -27,6 +28,16 @@ spring:
   session:
     store-type: redis
     timeout: 500
+    #配置本地文件路径映射
+  mvc:
+    static-path-pattern: /image/**
+    #配置访问本地文件
+  resources:
+    static-locations: file:/Users/pengchunkao/image
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 100MB
 mybatis:
   mapper-locations: classpath:mapper/*.xml
   #mybatis对应的实体类

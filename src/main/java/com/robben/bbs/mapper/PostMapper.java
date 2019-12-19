@@ -1,1 +1,1 @@
-package com.robben.bbs.mapper;import org.apache.ibatis.annotations.Mapper;import org.springframework.stereotype.Repository;@Repositorypublic interface PostMapper {}
+package com.robben.bbs.mapper;import com.robben.bbs.pojo.Comment;import com.robben.bbs.pojo.Post;import org.apache.ibatis.annotations.Mapper;import org.springframework.stereotype.Repository;public interface PostMapper {    String postPost(Post post);    String postComment(Comment comment);}

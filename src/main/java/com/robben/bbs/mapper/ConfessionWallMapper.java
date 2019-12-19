@@ -1,0 +1,1 @@
+package com.robben.bbs.mapper;import com.robben.bbs.pojo.ConfessionWall;import java.util.List;public interface ConfessionWallMapper {    List getConfessionWall();    Boolean postConfessionWall(ConfessionWall confessionWall);}
