@@ -1,1 +1,0 @@
-package com.robben.bbs.pojo;import org.springframework.security.core.GrantedAuthority;import org.springframework.stereotype.Component;@Componentpublic class MySimpleGrantedAuthority implements GrantedAuthority {    private String role;    @Override    public String getAuthority() {        return role;    }}
