@@ -1,1 +1,1 @@
-package com.robben.bbs.service;import com.robben.bbs.pojo.Comment;import com.robben.bbs.pojo.Post;public interface PostService {    String postPost(Post post);    String postComment(Comment comment);}
+package com.robben.bbs.service;import com.robben.bbs.pojo.Comment;import com.robben.bbs.pojo.Post;public interface PostService {    Boolean postPost(Post post);    Boolean postComment(Comment comment);}
