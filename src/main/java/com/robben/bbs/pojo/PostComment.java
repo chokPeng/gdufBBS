@@ -1,0 +1,1 @@
+package com.robben.bbs.pojo;import lombok.Data;import org.springframework.stereotype.Component;import java.sql.Timestamp;@Component@Datapublic class PostComment {    private Integer id;    private Integer postId;    private Integer commenterId;    private String commentContent;    private Timestamp commentTime;}

@@ -1,0 +1,1 @@
+package com.robben.bbs.mapper;import com.robben.bbs.pojo.PostComment;import org.springframework.stereotype.Repository;@Repositorypublic interface PostCommentMapper {    Integer postComment(PostComment comment);    Integer deleteComment(Integer commentId);}

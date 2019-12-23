@@ -1,11 +1,5 @@
 server:
   port: 8090
-#  servlet:
-#    session:
-#      cookie:
-#        name: hello
-#      timeout: 1m:
-
 spring:
   datasource:
     type: com.zaxxer.hikari.HikariDataSource

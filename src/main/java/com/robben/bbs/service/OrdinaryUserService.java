@@ -1,1 +1,1 @@
-package com.robben.bbs.service;import com.robben.bbs.pojo.OrdinaryUser;public interface OrdinaryUserService {   OrdinaryUser queryByUsername(String username);   Boolean register(OrdinaryUser user);}
+package com.robben.bbs.service;import com.robben.bbs.pojo.OrdinaryUser;public interface OrdinaryUserService {   OrdinaryUser queryByUsername(String username);   Integer register(OrdinaryUser user);   OrdinaryUser getUserById(Integer id);}

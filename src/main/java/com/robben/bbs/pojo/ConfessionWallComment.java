@@ -1,0 +1,1 @@
+package com.robben.bbs.pojo;import lombok.Data;import java.sql.Timestamp;@Datapublic class ConfessionWallComment {    private Integer Id;    private Integer confessionWallId;    private OrdinaryUser commenter;    private String commentContent;    private Timestamp commentTime;    private String picture;}
