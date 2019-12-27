@@ -1,0 +1,1 @@
+package com.robben.bbs.pojo;import lombok.Data;import org.springframework.stereotype.Component;@Component@Datapublic class Image {    private Integer id;    private Long postId;    private String location;}

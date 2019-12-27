@@ -27,7 +27,7 @@ spring:
     static-path-pattern: /image/**
     #配置访问本地文件
   resources:
-    static-locations: file:/Users/pengchunkao/image
+    static-locations: file:/Users/pengchunkao/gdufBBSImage/
   servlet:
     multipart:
       max-file-size: 50MB
