@@ -1,0 +1,1 @@
+package com.robben.bbs.service;import com.robben.bbs.pojo.PrivateMessage;import java.util.List;public interface PrivateMessageService {    Boolean savePrivateMessage(Integer senderId,String content,                               Integer receiverId);    List<PrivateMessage> getAllPrivateMessage(Integer receiverId);}

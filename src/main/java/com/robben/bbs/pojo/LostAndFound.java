@@ -1,0 +1,1 @@
+package com.robben.bbs.pojo;import lombok.Data;import org.springframework.stereotype.Component;import java.sql.Timestamp;@Component@Datapublic class LostAndFound {    private Integer id;    private Integer finder;    private Integer owner;    private String content;    private Timestamp postingTime;}

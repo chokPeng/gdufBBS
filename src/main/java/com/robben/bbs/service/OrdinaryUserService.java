@@ -1,1 +1,1 @@
-package com.robben.bbs.service;import com.robben.bbs.pojo.OrdinaryUser;public interface OrdinaryUserService {   OrdinaryUser queryByUsername(String username);   Integer register(OrdinaryUser user);   OrdinaryUser getUserById(Integer id);}
+package com.robben.bbs.service;import com.robben.bbs.pojo.OrdinaryUser;import java.util.HashMap;public interface OrdinaryUserService {   OrdinaryUser queryByUsername(String username);   Integer register(OrdinaryUser user);   HashMap getUserInfoById(Integer id);   HashMap getUserIdAndAvatarByUsername(String username);}

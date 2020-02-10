@@ -1,0 +1,1 @@
+package com.robben.bbs.service;import java.util.HashMap;import java.util.List;public interface RelationshipService {    List<HashMap> getFollower(Integer followeeId);    List<HashMap> getFollowee(Integer followerId);    Integer saveFollower(Integer followeeId,Integer followerId);    Integer deleteFollower(Integer followeeId,Integer followerId);}

@@ -1,0 +1,1 @@
+package com.robben.bbs.pojo;import lombok.Data;import org.springframework.stereotype.Component;import java.util.HashMap;@Component@Datapublic class CommentReply {    private Integer id;    private String content;    private HashMap commenter;//评论者    private HashMap replier;//回复者    private Integer commentId;//评论id    private Integer like;}

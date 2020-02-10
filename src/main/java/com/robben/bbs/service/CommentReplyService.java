@@ -1,0 +1,1 @@
+package com.robben.bbs.service;import com.robben.bbs.pojo.CommentReply;public interface CommentReplyService {    Integer saveCommentReply(CommentReply commentReply);    Integer deleteCommentReplyById(Integer id);}

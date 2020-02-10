@@ -1,0 +1,1 @@
+package com.robben.bbs.mapper;import com.robben.bbs.pojo.CommentReply;import org.springframework.stereotype.Repository;import java.util.List;@Repositorypublic interface CommentReplyMapper {    Integer saveCommentReply(CommentReply commentReply);    Integer deleteCommentReply(Integer id);    List<CommentReply> getCommentReplyByCommentId(Integer commentId);}
