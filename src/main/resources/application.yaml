@@ -39,3 +39,8 @@ mybatis:
   type-aliases-package: com.robben.bbs.pojo.*
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,beans
