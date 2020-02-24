@@ -1,0 +1,1 @@
+package com.robben.bbs.service;import java.util.HashMap;import java.util.List;public interface ActiveService {    Integer saveActive(Long userId,String content,String action);    Integer deleteActive(Integer activeId);    List<HashMap> getActive(Long userId);}

@@ -1,1 +1,1 @@
-package com.robben.bbs.pojo;import org.springframework.stereotype.Component;import java.util.HashMap;import java.util.List;@Componentpublic class Relationship {    private List<HashMap> followee;    private List<HashMap> follower;}
+package com.robben.bbs.pojo;import lombok.Data;import org.springframework.stereotype.Component;import java.util.HashMap;import java.util.List;@Component@Datapublic class Relationship {    private List<HashMap> followee;    private List<HashMap> follower;}

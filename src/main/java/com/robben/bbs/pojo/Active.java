@@ -1,0 +1,1 @@
+package com.robben.bbs.pojo;import lombok.Data;import org.springframework.stereotype.Component;import java.sql.Timestamp;@Component@Datapublic class Active {   private Long userId;   private String content;   private String action;   private Timestamp time;}

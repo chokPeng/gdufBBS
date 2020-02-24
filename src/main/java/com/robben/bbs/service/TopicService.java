@@ -1,0 +1,1 @@
+package com.robben.bbs.service;import java.util.List;public interface TopicService {    List getTopic(String type);}

@@ -1,1 +1,0 @@
-//package com.robben.bbs.config;////import org.springframework.security.web.authentication.logout.LogoutHandler;////public class MyLogoutHander implements LogoutHandler {//}

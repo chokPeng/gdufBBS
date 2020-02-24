@@ -1,0 +1,1 @@
+package com.robben.bbs.mapper;import org.springframework.stereotype.Repository;import java.util.HashMap;import java.util.List;@Repositorypublic interface ActiveMapper {    Integer saveActive(Long userId,String content,String action);    Integer deleteActive(Integer activeId);    List<HashMap> getActive(Long userId);}
