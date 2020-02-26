@@ -1,0 +1,1 @@
+package com.robben.bbs.service;public interface RedisService {    Long savePostLike(Long postId,Integer userNo);    Long deletePostLike(Long postId,Integer userNo);    Boolean saveOnlineUser(Long userId);    Integer getOnlineUser();    Boolean deleteOnlineUser(Integer userId);}

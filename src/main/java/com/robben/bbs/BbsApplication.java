@@ -5,12 +5,14 @@ import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cache.annotation.EnableCaching;
+import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.security.web.context.SecurityContextPersistenceFilter;
 import org.springframework.session.data.redis.RedisIndexedSessionRepository;
 import org.springframework.session.data.redis.config.annotation.web.http.EnableRedisHttpSession;
 import org.springframework.session.web.http.SessionRepositoryFilter;
 
 @SpringBootApplication
+@EnableScheduling
 @EnableCaching
 @MapperScan("com.robben.bbs.mapper")
 @EnableRedisHttpSession
