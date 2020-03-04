@@ -1,0 +1,1 @@
+package com.robben.bbs.service;import java.util.HashMap;public interface SearchService {    HashMap query(String keyword);}
