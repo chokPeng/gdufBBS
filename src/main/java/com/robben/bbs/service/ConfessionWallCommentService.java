@@ -1,1 +1,0 @@
-package com.robben.bbs.service;import java.io.IOException;public interface ConfessionWallCommentService {    Integer saveConfessionWallComment(Long confessionWallId, Long commenterId,String commentContent) throws IOException;    Integer deleteConfessionWallCommentById(Integer id);    Integer deleteConfessionWallCommentByWallId(Long confessionWallId);}
