@@ -1,1 +1,0 @@
-package com.robben.bbs.service;public interface RichTextService {    Integer saveRichText(Long authorId,String content);    String getRichTextById(Integer id);}
