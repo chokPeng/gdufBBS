@@ -4,9 +4,9 @@ spring:
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/gdufBBS?serverTimezone=Asia/Shanghai
+    url: jdbc:mysql://127.0.0.1:3306/GDUFBBS?serverTimezone=Asia/Shanghai
     hikari:
-      pool-name: gdufBBS
+      pool-name: GDUFBBS
       username: root
       password: 123456
       auto-commit: true
@@ -27,7 +27,7 @@ spring:
     static-path-pattern: /image/**
     #配置访问本地文件
   resources:
-    static-locations: file:/Users/pengchunkao/gdufBBSImage/
+    static-locations: file:/usr/image
   servlet:
     multipart:
       max-file-size: 50MB
