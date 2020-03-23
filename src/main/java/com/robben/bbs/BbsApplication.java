@@ -1,5 +1,8 @@
 package com.robben.bbs;
 
+import com.robben.bbs.controller.OrdinaryUserController;
+import com.robben.bbs.service.OrdinaryUserService;
+import com.robben.bbs.service.impl.OrdinaryUserServiceImpl;
 import org.hibernate.validator.internal.engine.groups.ValidationOrderGenerator;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
