@@ -1,10 +1,13 @@
 server:
   port: 8090
+  servlet:
+    session:
+      timeout: 5m
 spring:
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/GDUFBBS?serverTimezone=Asia/Shanghai
+    url: jdbc:mysql://127.0.0.1:3306/GDUFBBS?serverTimezone=Asia/Shanghai&characterEncoding=UTF-8
     hikari:
       pool-name: GDUFBBS
       username: root
@@ -23,6 +26,7 @@ spring:
   session:
     store-type: redis
     timeout: 500
+
   mvc:
     static-path-pattern: /image/**
     #配置访问本地文件
