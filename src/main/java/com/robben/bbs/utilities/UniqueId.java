@@ -1,1 +1,1 @@
-package com.robben.bbs.utilities;public class UniqueId {    //根据网上数据，一百个线程同时都不重复    public static synchronized Long getUniquePostId(){        return System.currentTimeMillis();    }}
+package com.robben.bbs.utilities;public class UniqueId {    //根据网上数据，一百个线程同时都不重复    public static synchronized Long getUniquePostId() {        return System.currentTimeMillis();    }}

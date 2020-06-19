@@ -1,1 +1,1 @@
-package com.robben.bbs.pojo;import lombok.Data;import org.springframework.stereotype.Component;import java.sql.Timestamp;@Component@Datapublic class Collection {    private Integer id;    private Long collectorId;    private Long postId;    private Timestamp collectingTime;}
+package com.robben.bbs.pojo;import lombok.Data;import java.sql.Timestamp;@Datapublic class Collection {    private Integer id;    private Long collectorId;    private Long postId;    private Timestamp collectingTime;}

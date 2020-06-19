@@ -1,1 +1,1 @@
-package com.robben.bbs.pojo;import lombok.Data;import org.springframework.stereotype.Component;@Component@Datapublic class RichText {    Integer id;    Long authorId;    String content;}
+package com.robben.bbs.pojo;import lombok.Data;import org.springframework.stereotype.Component;@Datapublic class RichText {    Integer id;    Long authorId;    String content;}

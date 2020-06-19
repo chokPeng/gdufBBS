@@ -1,1 +1,1 @@
-package com.robben.bbs.service;//设置定时器public interface CronService {    String getCron();}
+package com.robben.bbs.service;//设置定时器public interface CronService {    String getCron();}

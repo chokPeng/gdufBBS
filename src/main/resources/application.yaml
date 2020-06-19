@@ -2,7 +2,7 @@ server:
   port: 8090
   servlet:
     session:
-      timeout: 5m
+      timeout: 5M
 spring:
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
@@ -25,13 +25,11 @@ spring:
     host: 127.0.0.1
   session:
     store-type: redis
-    timeout: 500
-
+    timeout: 5m
   mvc:
     static-path-pattern: /image/**
-    #配置访问本地文件
-#  resources:
-#    static-locations: file:/usr/image
+#    resources:
+#      static-locations: file:/usr/image
   resources:
     static-locations: file:/Users/pengchunkao/gdufBBSImage
   servlet:
@@ -40,14 +38,57 @@ spring:
       max-request-size: 100MB
   main:
     allow-bean-definition-overriding: true
+    #邮箱配置
+  mail:
+      # 发件人邮箱的SMTP服务器地址, 必须准确, 不同邮件服务器地址不同, 一般格式为: smtp.xxx.com
+      # 例如：网易163邮箱的 SMTP 服务器地址为:smtp.163.com；腾讯邮箱的SMTP服务器地址为:smtp.qq.com
+    host: smtp.qq.com
+    port: 465
+      # 邮箱账号以及其授权码（此处填写的是冯超的邮箱）
+    username: 2584221963@qq.com
+    password: cprmxbqcupuqdifa
+    default-encoding: utf-8
+    protocol: smtp
+    properties:
+      mail:
+          #        debug: true
+        smtp:
+          socketFactory:
+            class: javax.net.ssl.SSLSocketFactory
+            # 邮件发送安全配置
+            auth: true
+            starttls:
+              enable: true
+              required: true
+  #邮箱配置
+
+#  mail:
+#    host: smtp.sina.com
+#    username: huojianwo@sina.com
+#    #QQ邮箱的授权码
+#    password: 9cca94e66f72f294
+#    default-encoding: UTF-8
+#    properties.mail.smtp.port: 465 #端口号465或587
+#    from: huojianwo@sina.com # 发送邮件的地址，和上面username一致
+#    properties.mail.smtp.starttls.enable: true
+#    properties.mail.smtp.starttls.required: true
+#    properties.mail.smtp.ssl.enable: true
+##    from: 527685564@qq.com
+##    properties:
+##      mail:
+##        smtp:
+##          port: 587
+##
+##          auth: true
+##          starttls:
+##            enable: true
+##            required: true
 mybatis:
   mapper-locations: classpath:mapper/*.xml
   #mybatis对应的实体类
   type-aliases-package: com.robben.bbs.pojo.*
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
-management:
-  endpoints:
-    web:
-      exposure:
-        include: health,info,beans
+pagehelper:
+  helper-dialect: mysql
+
